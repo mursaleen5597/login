@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="80.246">
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate if the login functionality is working" time="9.403">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user enters the username and password in respective text boxes.........passed
+And user hits login button..................................................passed
+Then user is navigated to the home page successfully........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality is not working while providing both blank credentials" time="8.709">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will NOT enter the username and password in respective text boxes.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality is not working while providing any one invalid credentials" time="9.569">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will enter only the username and NOT password in respective text boxes.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality should not be working while providing both invalid credentials" time="10.361">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will enter invalid username and inavalid password in respective text boxes.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality that user should not be able to perform copy/paste operations on Password field" time="9.791">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will enter username and perform copy or paste operation on password field.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality should not be working while providing credentials beyond the specified length" time="9.745">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will enter username and password beyond the specified limit in respective text boxes.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that Login functionality should not be working while providing credentials below the specified length" time="9.46">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user will enter username and password below the specified limit in respective text boxes.passed
+And user hits login button..................................................passed
+Then error message should be displayed to the user..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test the Demoblaze login functionality" name="To validate that close button is working or not on login page" time="12.405">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And user is on Demoblaze login page.........................................passed
+When user hits on close button..............................................passed
+Then login window must be closed............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
